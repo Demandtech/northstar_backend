@@ -9,7 +9,7 @@ router = APIRouter(
     tags=["Users"]
 )
 
-#5EH4?$XVN9%#$pR
+
 
 @router.post('/', status_code=status.HTTP_201_CREATED, response_model=schemas.UserOut)
 def create_user(user: schemas.UserCreate, db: session = Depends(database.get_db)):
